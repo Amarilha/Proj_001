@@ -1,0 +1,436 @@
+﻿<UserControl x:Class="gerenciamento_NET_wpf.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:gerenciamento_NET_wpf.View"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition  Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0"
+                        >
+                <StackPanel>
+                    <TextBlock Text="NOME"
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Margin="0,3,0,0"/>
+
+                    <TextBox x:Name="txtNome"
+                         Height="23"
+                         FontSize="15"
+                         FontWeight="Medium"
+                         FontFamily="Montserrat"
+                         BorderBrush="#005587"
+                         Foreground="White"
+                         BorderThickness="0,0,0,2"
+                         HorizontalAlignment="Left"
+                         Margin="0,1,0,0"
+                         Background="Transparent" Width="601" 
+                         />
+                </StackPanel>
+
+                <StackPanel>
+                    <Grid  Height="40"
+                           HorizontalAlignment="Left"
+                           >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0"
+                                   >
+                            <TextBlock Text="CPF"
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Margin="0,3,0,0"/>
+
+                            <TextBox x:Name="txtCPF"
+                                 Height="23"
+                                 FontSize="15"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"
+                                 BorderBrush="#005587"
+                                 Foreground="White"
+                                 BorderThickness="0,0,0,4"
+                                 HorizontalAlignment="Left"
+                                 Margin="0,1,0,0"
+                                 Background="Transparent" 
+                                 Width="299" 
+                             />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="NASCIMENTO"
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Margin="0,3,0,0"/>
+
+                            <DatePicker HorizontalAlignment="Left"
+                                        Margin="2,0,0,0"
+                                        
+                                        />
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel>
+                    <Grid Height="40"
+                          HorizontalAlignment="Left" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="N°Registro"
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Margin="0,3,0,0"/>
+
+                            <TextBox x:Name="txtNregistro"
+                                 Height="23"
+                                 FontSize="15"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"
+                                 BorderBrush="#005587"
+                                 Foreground="White"
+                                 BorderThickness="0,0,0,4"
+                                 HorizontalAlignment="Left"
+                                 Margin="0,1,0,0"
+                                 Background="Transparent" 
+                                 Width="299" 
+                             />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+
+
+                            <TextBlock Text=""
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Margin="0,3,0,0"/>
+
+                            <DatePicker HorizontalAlignment="Left"
+                                        Margin="2,0,0,0">
+                                <DatePicker.Style>
+                                    <Style>
+                                        
+                                    </Style>
+                                </DatePicker.Style>
+                                
+                            </DatePicker>
+                                        
+                                        
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Cat.Hab"
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"/>
+
+                            <ComboBox Height="20"
+                                 FontSize="15"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"
+                                 Background="Transparent"
+                                 BorderThickness="0,0,0,1"
+                                 HorizontalAlignment="Left"
+                                 Margin="4,4,0,0" 
+                                 Width="60"
+                                 Foreground="#FF2A4EA5"
+                                 >
+                                <ComboBoxItem>
+                                    <TextBlock Text="A"/>
+                                </ComboBoxItem>
+                                <ComboBoxItem>
+                                    <TextBlock Text="B"/>
+                                </ComboBoxItem>
+                                <ComboBoxItem>
+                                    <TextBlock Text="C"/>
+                                </ComboBoxItem>
+                                <ComboBoxItem>
+                                    <TextBlock Text="D"/>
+                                </ComboBoxItem>
+                                <ComboBoxItem>
+                                    <TextBlock Text="E"/>
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Margin="0,40,0,0"
+                            HorizontalAlignment="Left">
+                    <Grid Height="30">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <Button x:Name="btnNovo"
+                            Margin="5,0,0,0"
+                            BorderThickness="0"
+                            Content="Novo"
+                            Foreground="White"
+                            HorizontalAlignment="Left"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            RenderTransformOrigin="0.498,0.579"
+                            >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="#003387"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#005587"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="85" Height="30"
+                                        CornerRadius="16"
+                                        Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <Button x:Name="btnAlterar"
+                            Margin="5,0,0,0"
+                            BorderThickness="0"
+                            Content="Alterar"
+                            HorizontalAlignment="Left"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                           
+                            >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="#003387"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#005587"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="85" Height="30"
+                                        CornerRadius="16"
+                                        Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <Button x:Name="btnSalvar"
+                            Margin="5,0,0,0"
+                            BorderThickness="0"
+                            Content="Salvar"
+                            Foreground="White"
+                            HorizontalAlignment="Left"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            RenderTransformOrigin="0.498,0.579"
+                            >
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="#003387"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#005587"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="85" Height="30"
+                                        CornerRadius="16"
+                                        Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+
+            </StackPanel>
+
+
+            <StackPanel Grid.Column="1" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="160"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+                        <Rectangle Margin="0,5,0,0" Height="150" Stroke="#003387" Width="140"
+                                   StrokeThickness="3">
+
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="/images/sem_imagem.jpg"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+                        <Button x:Name="btnFoto"
+                            Margin="5,0,0,0"
+                            BorderThickness="0"
+                            Content="FOTO"
+                            HorizontalAlignment="Center"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                           
+                            >
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="#003387"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#005587"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Width="85" Height="30"
+                                        CornerRadius="16"
+                                        Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
+                    
+                    
+                </Grid>
+
+            </StackPanel>
+
+
+
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+
+                <TextBlock Text="BUSCAR"
+                               Opacity="0.4"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Margin="0,0,0,0"/>
+
+                <TextBox x:Name="txtBusca"
+                                 Height="20"
+                                 FontSize="15"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"
+                                 BorderBrush="#005587"
+                                 Foreground="White"
+                                 BorderThickness="0,0,0,2"
+                                 HorizontalAlignment="Left"
+                                 Margin="0,0,0,0"
+                                 Padding="24,5,0,0"
+                                 Width="429" 
+                             >
+                    <TextBox.Background >
+                        <ImageBrush ImageSource="/images/loupe (1).png"
+                                        Stretch="None"
+                                        
+                                        AlignmentX="Left"
+                                        />
+                    </TextBox.Background>
+
+                </TextBox>
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <DataGrid Height="183" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+
+            </StackPanel>
+            
+        </Grid>
+        
+    </Grid>
+
+   
+</UserControl>
