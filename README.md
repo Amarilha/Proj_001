@@ -2,7 +2,7 @@
 
 # Sobre o Projeto 
 
-O projeto é um aplicativo WPF(.NET Framework) desenvolvido para gerenciar carros entre funcinarios. A aplicaçao esta em desevolvimeto.
+O projeto é um aplicativo WPF(.NET Framework) desenvolvido para gerenciar carros entre funcionários. A aplicação esta em desenvolvimento.
 
 # Layout Lonig
 
