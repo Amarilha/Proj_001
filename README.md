@@ -21,6 +21,9 @@ O projeto é um aplicativo WPF(.NET Framework) desenvolvido para gerenciar carro
 ![Layout1](https://github.com/Amarilha/Proj_001_NET_WPF/blob/main/Captura%20de%20tela_20221216_093039.png)
 
 # Modelo conceitual
+
+![Modelo](https://github.com/Amarilha/Proj_001_NET_WPF/blob/main/Captura%20de%20tela_20221216_133738.png)
+
 # Tecnologias utilizadas
 ## Back end
 - C#
