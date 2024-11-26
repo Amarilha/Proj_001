@@ -15,7 +15,7 @@ namespace gerenciamento_NET_wpf.Repositories
         public RepositoryBase()
         {
             
-            _connectionString = "Server=VICTOR_PC ; Database=SQL_DB_1; Integrated Security=true";
+            _connectionString = "Server=888888 ; Database=SQL_DB_1; Integrated Security=true";
         }
         protected SqlConnection GetConnection()
         {
